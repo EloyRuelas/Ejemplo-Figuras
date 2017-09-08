@@ -1,33 +1,22 @@
-
 /**
- * Write a description of class Circulo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Esta clase representa objetos circulo con un radio.
+ * @autor Eloy Ruelas Sanatcruz
+ * @version 1.0(8-sep-17)
  */
-public class Circulo
+
+public class Circulo extends Figura
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Circulo
-     */
-    public Circulo()
+    private float radio;
+    
+    public Circulo(float unRadio)
     {
-        // initialise instance variables
-        x = 0;
+        radio=unRadio;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    @Override       // nos permite saber si estamos sobreescribiendo o no en realidad.
+    public void calcularArea()
     {
-        // put your code here
-        return x + y;
+        area=3.14f * radio; //a un numero con decimales se le pone una f al final para decirle al compilar que es un float
     }
+    
 }
