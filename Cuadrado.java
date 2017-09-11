@@ -4,24 +4,24 @@
  * @version 1.0(8-sep-17)
  */
 
-public class Circulo extends Figura
+public class Cuadrado extends Figura
 {
-    private float radio;
+    private float lado;
     
-    public Circulo(float unRadio)
+    public Cuadrado(float unLado)
     {
-        radio=unRadio;
+        lado=unLado;
     }
     
     @Override       // nos permite saber si estamos sobreescribiendo o no en realidad.
     public void calcularArea()
     {
-        area=3.14f * radio; //a un numero con decimales se le pone una f al final para decirle al compilar que es un float
+        area=lado*4; 
     }
     
     @Override
     public void calcularPerimetro()
     {
-        perimetro=(3.14f*2)*radio;
+        perimetro=lado*4;
     }
 }
